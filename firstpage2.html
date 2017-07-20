@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="firstpage.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script>
+	    window.onload=function(){
+	    	var mm=sessionStorage.getItem("username");
+            document.getElementById("one").innerHTML=mm;
+
+	    }
+	</script>
+	
+</head>
+<body>
+	
+	<div id="topnav">
+			<div class="logopic1">
+				<img src="images/nav-logo.png">
+			</div>
+			<ul class="logoword">
+				<li>优先认购</li>
+				<li>我要投资</li>
+				<li>我要转让</li>
+				<li>我要供票</li>
+				<li>我要云桥</li>
+				<li>帮助中心</li>
+			</ul>
+			<div class="logopic2">
+				<img src="images/user.png">
+			</div>
+			<ul class="logoword2">
+				<li><a href="" id="one"></a></li>
+				<li><a href="page1.html">/退出</a></li>
+			</ul>
+	</div>
+	
+
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+					<video controls="controls" autoplay>
+  						<source src="video/banner.mp4" type="video/mp4">
+					</video>
+			</div>
+			<div class="swiper-slide">
+					<img src="images/quxian.png" class="ani left" swiper-animate-effect="bounceInLeft" swiper-animate-duration="2s" swiper-animate-delay="0s">
+					
+					<img src="images/table.png" class="ani right" swiper-animate-effect="bounceInRight" swiper-animate-duration="2s" swiper-animate-delay="0s">
+					
+			</div>
+			<div class="swiper-slide">
+				<img src="images/3.jpg">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/4.jpg">
+			</div>
+			<div class="swiper-slide">
+				<img src="images/5.jpg">
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<script>
+			var swiper=new Swiper(".swiper-container",{
+			pagination:".swiper-pagination",
+			direction:"vertical",
+			paginationClickable:true,//点击
+			mousewheelControl:true,//鼠标滚动
+			// loop:true,
+			onInit:function(swiper){
+				swiperAnimateCache(swiper); //隐藏动画元素 
+    			swiperAnimate(swiper); //初始化完成开始动画
+			},
+			onSlideChangeEnd:function(swiper){
+				swiperAnimate(swiper); //初始化完成开始动画
+			}
+		});
+
+	</script>
+</body>
+</html>

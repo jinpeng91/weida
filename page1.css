@@ -1,0 +1,185 @@
+body{
+	background-color:#fedc71;
+}
+.img-on img{
+	width:1920px;
+	height:760px;
+}
+.log-one{
+	position:absolute;
+	left:20px;
+}
+/*大盒子*/
+.box2{
+	width:465px;
+	height:554px;
+	border:1px solid white;
+	border-top:1px solid red;
+	position:absolute;
+	background-color:white;
+	top:130px;
+	left:1268px;
+}
+h1{
+	left:10px;	
+	position:relative;
+}
+
+/*小盒子*/
+.box2-one{
+	width:416px;
+	height:513px;
+	/* background-color:pink; */
+	position:absolute;
+	margin-left:28px;
+	margin-top:20px;
+}
+/* 号码框 */
+#iphone{
+	border:1px solid #a94442;
+	width:400px;
+	height:50px;
+	border-radius:5px;
+/* 	position:absolute; */
+	top:70px;
+	left:30px;
+	text-indent:50px;
+	outline:none;
+
+}
+/* 手机图标 */
+.pic1{
+	width:44px;
+	height:50px;
+	background-color:#f2dede;
+	position:absolute;
+	border:1px solid #a94442;
+	border-radius:5px 0 0 5px;
+	
+}
+#phonepic{
+	font-size:25px;
+	color:#a94442;
+	position:absolute;
+	left:10px;
+	top:6px;
+}
+
+/* 二维码获取框 */
+#code{
+	width:260px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius:5px;
+	margin-top:20px;	
+	text-indent:50px;
+	outline:none;
+}
+#getcode{
+	width:122px;
+	height:50px;
+	border:1px solid #a94442;
+	border-radius:5px;
+	margin-top:20px;
+	background-color:#ec868c;
+	outline: none;
+	color:white;
+	font-size:15px;
+}
+/* 二维码图标 */
+.pic2{
+	width:44px;
+	height:50px;
+	background-color:#f2dede;
+	position:absolute;
+	border:1px solid #a94442;
+	border-radius:5px 0 0 5px;
+	margin-top:20px;
+}
+#codepic{
+	font-size:25px;
+	color:#a94442;
+	position:absolute;
+	left:10px;
+	top:6px;
+}
+/* 登录框*/
+#login{
+	border:1px solid #a94442;
+	width:400px;
+	height:50px;
+	margin-top:20px;
+	border-radius:5px;
+	text-indent:50px;
+	outline:none;
+}
+/* 锁图标 */
+.pic3{
+	width:44px;
+	height:50px;
+	background-color:#f2dede;
+	position:absolute;
+	border:1px solid #a94442;
+	border-radius:5px 0 0 5px;
+	margin-top:20px;
+}
+#lock{
+	font-size:25px;
+	color:#a94442;
+	position:absolute;
+	left:10px;
+	top:6px;
+}
+
+/* 锁图2 */
+.pic4{
+	width:44px;
+	height:50px;
+	background-color:#f2dede;
+	position:absolute;
+	border:1px solid #a94442;
+	border-radius:5px 0 0 5px;
+	margin-top:20px;
+}
+#lock2{
+	font-size:25px;
+	color:#a94442;
+	position:absolute;
+	left:10px;
+	top:6px;
+}
+/* 确定框 */
+.sure{
+	border:1px solid #a94442;
+	width:400px;
+	height:50px;
+	margin-top:20px;
+	/* position:relative; */
+	border-radius:5px;
+	text-indent:50px;
+	outline:none;
+}
+
+/* 同意框 */
+.agree{
+	background-color:#e2454e;
+	width:400px;
+	height:50px;
+	border:1px solid #e2454e;
+	border-radius:7px;
+	margin-top:30px;
+	outline:none;
+	color:white;
+	font-size:20px;
+}
+.box2-one p{
+	color:#ae4442;
+}
+/* 底部 */
+.bottom span{
+	margin-left:120px;
+}
+.bottom{
+	margin-top:10px;
+}
+

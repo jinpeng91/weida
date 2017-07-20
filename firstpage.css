@@ -1,0 +1,61 @@
+html,body{height:100%;}
+/*网页头部*/
+#topnav{
+	width:1920px;
+	height:77px;
+	background-color:#dadce1;
+	position: fixed;
+	top:0;
+	z-index:999;
+	opacity: 0.5;
+}
+.logopic1 img{
+	width: 135px;
+	margin-left:360px;
+	margin-top:15px;
+}
+.logoword{
+	position: absolute;
+	left:580px;
+}
+.logoword li{
+	float:left;
+	margin-left:50px;
+	position: relative;
+	bottom: 32px;
+	color:#676767;
+}
+/*头像图标*/
+.logopic2 img{
+	width: 44px;
+	height: 43px;
+	position:relative;
+	left:1315px;
+	bottom:45px;
+}
+.logoword2{
+	position: absolute;
+	left: 1400px;
+	top:29px;
+}
+.logoword2 li{
+	float: left;
+}
+/*轮播图*/
+.swiper-container{
+	width: 100%;
+	height: 900px;
+}
+.swiper-slide{
+	background:url("images/2.jpg") no-repeat;
+}
+.swiper-slide .left{
+	position: absolute;
+	bottom:20px;
+}
+.swiper-slide .right{
+	position: absolute;
+	bottom:30px; 
+	right: 0px;
+
+}

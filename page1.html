@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="page1.css">
+
+	<script src="js/common.js"></script>
+	<script src="js/jquery-1.11.0.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="page1.js"></script>
+</head>
+<body>
+	<div id="box1">
+		<div class="log-one">
+			<img src="images/nav-logo.png">
+		</div>
+		<div class="img-one">
+			<img src="images/login_background.jpg">
+		</div>
+
+		<div class="box2">
+		<!--用户注册部分 -->
+			<div class="box2-one">
+			<h1>用户注册</h1>
+		<form action="page2.html" id="myfrm">
+			<div class="pic1">
+				<i class="icon iconfont icon-shouji" id="phonepic"></i>
+			</div>
+				<input type="text" placeholder="手机号码"  id="iphone" onblur="checkPhone()">
+				<p class="phoneword">手机号为必填项</p>
+			
+		<!--验证码部分 -->
+			<div class="pic2">
+				<i class="icon iconfont icon-erweima" id="codepic"></i>
+			</div>
+				<input type="text" id="code" onblur="checkCode()">
+				<input type="button" value="获取验证码" id="getcode" onclick="getChecked()">
+				<p class="codeword">验证码为必填项</p>
+
+		<!--密码登录部分 -->	
+			<div class="pic3">
+			 	<i class="icon iconfont icon-suo" id="lock"></i>
+			 </div>
+				<input type="password" id="login" placeholder="登录密码" onblur="checkPassword()">
+				<p class="loginword">登录密码必须填写</p>
+
+		<!--确认部分 -->
+			<div class="pic4">
+			 	<i class="icon iconfont icon-suo" id="lock2"></i>
+			 </div>
+				<input type="password" class="sure" placeholder="确认密码" onblur="checkRepassword()">
+				<p class="sureword">确认密码必须填写</p>
+		</form>
+		<!--登录部分 -->
+			<input type="button" class="agree" value="同意协议并提交"  onclick="submit()">
+			<div class="bottom">
+				<a href="page2.html">已注册？立即登录</a>
+				<span class="enroll">注册同意</span>
+				<a href="">《伟达金云桥使用协议》</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
